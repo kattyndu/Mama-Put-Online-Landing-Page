@@ -1,0 +1,62 @@
+Prompts Documentation
+
+1.0 Landing Page
+
+1.1 Menu Section
+
+1.1.1 Company Logo
+Prompt: "Create a minimalist and modern logo for an online Nigerian food delivery service called 'MamaPutOnline'. The logo should incorporate elements that subtly suggest Nigerian cuisine or a home-cooked feel, perhaps with a stylized cooking pot or a traditional pattern. The color palette should be warm and inviting, using shades of dark red and blue, reflecting the menu bar colors. The text 'MamaPutOnline' should be clear and legible, suitable for a top-left corner placement on a website. Ensure the logo is properly aligned vertically and has enough spacing from the edges of the screen."
+
+1.1.2 Navigation Menu
+Prompt: "Design a sleek and functional menu bar for 'MamaPutOnline'. The menu bar should have a dark red and/or blue background. It needs to include the following main navigation links: 'Products', 'Services', 'Customer Service', and 'Contact Us'. The typography should be clean and modern, ensuring good readability. The overall vibe should be professional yet inviting, hinting at delicious Nigerian meals. The navigation menu should be centered horizontally inside the menu bar. Make the navigation bar responsive on mobile, tablet, and desktop screens."
+
+1.1.3 Search Bar
+Prompt: "Generate a design for a search window to be placed on the top right-hand corner of the 'MamaPutOnline' landing page. It should be compact and elegant, blending seamlessly with the dark red and blue menu bar. Include a subtle search icon and placeholder text like 'Search for your favorite dish...'. The design should be intuitive and encourage user interaction, maintaining the professional and inviting aesthetic of the site. This search bar should be implemented using only HTML and CSS, without JavaScript, potentially using a label and checkbox hack for toggle functionality on smaller screens if needed."
+
+1.2 Hero Section
+
+1.2.1 Hero Layout
+Prompt: "Create a hero section design for 'MamaPutOnline' that occupies at least 30% of the vertical page length and 100% width. This section should be vertically partitioned into two equal halves. The overall vibe should be exciting and hunger-inducing. Use a soft, warm background color suitable for a food brand."
+
+1.2.2 Hero Heading
+Prompt: "Add the following bold, large-print heading to the right half of the hero section: 'Don't Miss the Opportunity to Savor Authentic Nigerian Flavors!'"
+
+1.2.3 Hero Description
+Prompt: "Add the following subtext below the hero heading: 'Experience the warmth and tradition of home-cooked Nigerian meals, delivered fresh to your doorstep.'"
+
+1.2.4 Call-To-Action Button
+Prompt: "Include a prominent Call-To-Action button below the hero text, saying 'Order Now'. The button should be styled with a gradient background, clear text, and a subtle hover effect."
+
+1.2.5 Hero Image
+Prompt: "Find a high-resolution image of a steaming, deliciously-cooked Nigerian dish or soup that evokes warmth and culinary delight. The image should have an appropriate aspect ratio for a vertical half of a hero section and excellent pixelization. The dish should look fresh, vibrant, and incredibly appetizing, making viewers instantly crave Nigerian food. This image will be placed on the left half of the hero section."
+
+1.3 Sidebar Navigation
+
+1.3.1 Sidebar Panel
+Prompt: "Design a left-aligned side panel for the main section of the 'MamaPutOnline' landing page. This panel should list categories of food items (e.g., 'Soups', 'Rice Dishes', 'Swallow & Sides', 'Proteins', 'Special Combos') that, when clicked, navigate or scroll the user to the corresponding product cards in the main content area. The design should be clean, easy to navigate, and visually distinct from the main product display, using a complementary color scheme to the menu bar. Implement the navigation using only HTML anchor links and CSS for smooth scrolling."
+
+1.3.2 Sidebar Styling
+Prompt: "Style the sidebar using a dark blue background with warm gold hover effects for the links. Add rounded edges, appropriate spacing, and ensure the sidebar remains responsive on smaller screens, potentially collapsing or becoming a top navigation bar using pure CSS techniques."
+
+1.4 Main Product Section
+
+1.4.1 Product Rows
+Prompt: "Create at least three rows in the main section, each containing at least four product cards. Each row should be clearly titled with its category (e.g., 'Our Delicious Soups', 'Rice Dishes & Sides', 'Special Dishes')."
+
+1.4.2 Product Cards
+Prompt: "Generate a design for individual product cards for 'MamaPutOnline'. Each card should boldly display the product name (e.g., 'Egusi Soup'), the quantity (e.g., 'Large (1L)'), and the price in Naira (e.g., '₦2,500'). Include a placeholder for an image of the dish. The cards should be visually appealing, easy to read, and designed to be arranged in a responsive grid layout. Consider a clean, modern aesthetic with clear pricing and product information."
+
+1.4.3 Product Card Styling
+Prompt: "Style all product cards with soft shadows, rounded corners, subtle hover animations, and appropriate spacing. Use a modern responsive grid layout that displays four cards per row on large screens, two on tablets, and one on mobile, maintaining a professional e-commerce appearance."
+
+1.5 Footer Section
+
+1.5.1 Footer Layout
+Prompt: "Create a professional footer section for the 'MamaPutOnline' landing page. It should be divided into multiple sections for company information, quick links, social media icons, and contact information."
+
+1.5.2 Footer Content
+Prompt: "Add the following sections inside the footer: Company information (MamaPutOnline description), Quick links (Products, Services, Contact Us, FAQ), Social media icons (Facebook, Instagram, Twitter, WhatsApp), Contact information (Phone, Email, Location), and Copyright text."
+
+1.5.3 Footer Styling
+Prompt: "Style the footer with a dark red and blue gradient background and white text. Add generous spacing, subtle hover effects for links and icons, and ensure responsive layouts for mobile and desktop screens."
+Landing Page Design for MamaPutOnline - Manus

@@ -1,0 +1,680 @@
+
+
+pasted_content.txt
+Text · 6.19 KB
+please do not use any javascript, only html and css for all features and more importantly the prompt documentation should be similar to the document i just attached
+Lite
+I understand. I will rebuild the MamaPutOnline landing page using only HTML and CSS, removing all JavaScript while maintaining the required functionality (like search and navigation) through CSS techniques. I will also revise the prompt documentation to match the structure and style of the document you provided.
+Web Development Constraints
+
+
+Lite
+I have successfully rebuilt the MamaPutOnline landing page according to your updated instructions, using only HTML and CSS.
+Here's what's included in this revised delivery:
+A fully functional and responsive HTML and CSS landing page (index.html, styles.css). All interactive elements like the search bar and add-to-cart buttons are now presentational, as per the no-JavaScript requirement.
+The prompts.txt file has been reformatted to match the Dewey Decimal-like structure you provided, detailing all vibe-engineering prompts used.
+The script.js file has been removed.
+The README.md has been updated to reflect these changes and provide comprehensive documentation of the project, including the HTML/CSS-only implementation and the presentational nature of certain features.
+You can find all the updated project files in the attached MamaPutOnline_no_js.zip archive. I have also attached the individual files for your convenience.
+MamaPutOnline_no_js.zip
+Archive · 6.52 MB
+index.html
+Code · 17.80 KB
+styles.css
+Code · 13.01 KB
+prompts.txt
+Text · 5.96 KB
+MamaPutOnline - Landing Page Project
+Markdown · 8.71 KB
+View all files in this task
+Task completed
+How was this result?
+
+
+
+
+Manus is an AI Agent and can make mistakes. Please double-check before use.
+
+styles.css
+/* ===================================================
+   MamaPutOnline Landing Page - CSS Stylesheet
+   
+   This stylesheet contains all the styling for the
+   MamaPutOnline landing page, including layout,
+   colors, typography, and responsive design.
+   
+   Color Palette:
+   - Primary: Dark Red (#8B0000)
+   - Secondary: Dark Blue (#1E3A5F)
+   - Accent: Warm Gold (#D4A574)
+   - Background: Cream (#F5F1E8)
+   - Text: Dark Charcoal (#2C2C2C)
+   ==================================================== */
+
+/* ===== RESET AND GLOBAL STYLES ===== */
+/* Reset default browser styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define root font size and color variables for easy theming */
+:root {
+    --primary-color: #8B0000;      /* Dark Red */
+    --secondary-color: #1E3A5F;    /* Dark Blue */
+    --accent-color: #D4A574;       /* Warm Gold */
+    --background-color: #F5F1E8;   /* Cream */
+    --text-color: #2C2C2C;         /* Dark Charcoal */
+    --light-text: #FFFFFF;         /* White */
+    --border-color: #DDD;          /* Light Gray */
+}
+
+/* Apply global font and background styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== HEADER / NAVIGATION SECTION ===== */
+/* Header container with navigation and search */
+.header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Header container layout using flexbox */
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Logo styling - positioned on top left */
+.logo {
+    flex: 0 0 auto;
+    color: var(--light-text);
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.2rem;
+}
+
+.logo .tagline {
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Navigation menu styling */
+.navbar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Search container styling - positioned on top right */
+.search-container {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    color: var(--light-text);
+    font-size: 0.95rem;
+    width: 200px;
+    outline: none;
+}
+
+/* Placeholder text styling for search input */
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    color: var(--light-text);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 0 0.5rem;
+}
+
+.search-btn:hover {
+    transform: scale(1.2);
+    color: var(--accent-color);
+}
+
+/* ===== HERO SECTION ===== */
+/* Hero section occupies 30%+ of vertical space and 100% width */
+.hero {
+    display: flex;
+    align-items: stretch;
+    min-height: 500px;
+    background: linear-gradient(135deg, #FFF9F0 0%, #F5F1E8 100%);
+    overflow: hidden;
+}
+
+/* Left half: Hero image */
+.hero-image {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Subtle zoom effect on hover */
+.hero-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Right half: Hero content with text and CTA button */
+.hero-content {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Call-To-Action button styling */
+.cta-button {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--light-text);
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+    text-decoration: none; /* Ensure it looks like a button, not a link */
+    display: inline-block; /* Keep it inline-block for proper spacing */
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(139, 0, 0, 0.4);
+}
+
+.cta-button:active {
+    transform: translateY(-1px);
+}
+
+/* ===== MAIN CONTENT SECTION ===== */
+/* Main content layout with sidebar and products */
+.main-content {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: calc(100vh - 600px);
+}
+
+/* ===== SIDEBAR / CATEGORY PANEL ===== */
+/* Left sidebar for category navigation */
+.sidebar {
+    flex: 0 0 200px;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-title {
+    color: var(--accent-color);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.category-list {
+    list-style: none;
+}
+
+.category-link {
+    display: block;
+    color: var(--light-text);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+/* Hover effect for category links */
+.category-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding-left: 1.5rem;
+    color: var(--accent-color);
+}
+
+/* ===== PRODUCTS CONTAINER ===== */
+/* Main products area with grid layout */
+.products-container {
+    flex: 1;
+}
+
+.products-section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: 700;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 1rem;
+}
+
+/* ===== PRODUCT GRID ===== */
+/* Grid layout for product cards - 4 columns */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* ===== PRODUCT CARDS ===== */
+/* Individual product card styling */
+.product-card {
+    background: var(--light-text);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hover effect for product cards */
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(139, 0, 0, 0.2);
+}
+
+/* Product image container */
+.product-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Image zoom on card hover */
+.product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+/* Product information section */
+.product-info {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.product-quantity {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Add to Cart button styling */
+.add-to-cart {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--light-text);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    text-decoration: none; /* Ensure it looks like a button, not a link */
+    text-align: center;
+    display: block; /* Make it block to take full width */
+}
+
+.add-to-cart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(139, 0, 0, 0.3);
+}
+
+.add-to-cart:active {
+    transform: scale(0.98);
+}
+
+/* ===== FOOTER SECTION ===== */
+/* Footer with social media links and information */
+.footer {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--light-text);
+    padding: 3rem 2rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer section styling */
+.footer-section {
+    padding: 1rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.footer-section p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--accent-color);
+    padding-left: 0.5rem;
+}
+
+/* ===== SOCIAL MEDIA LINKS ===== */
+/* Social media icons styling */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: var(--light-text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+/* Hover effect for social media icons */
+.social-links a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Footer bottom section with copyright */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1.5rem;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+    /* Adjust header layout for tablets */
+    .header-container {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .search-input {
+        width: 150px;
+    }
+
+    /* Adjust hero section for tablets */
+    .hero {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .hero-image {
+        min-height: 300px;
+    }
+
+    .hero-content {
+        padding: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    /* Adjust main content layout */
+    .main-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .sidebar {
+        flex: 1;
+        position: static;
+    }
+
+    /* Adjust product grid to 2 columns */
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+    /* Adjust header for mobile */
+    .header-container {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    /* Adjust hero section for mobile */
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    /* Adjust product grid to single column */
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    /* Adjust footer for mobile */
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* ===== UTILITY CLASSES ===== */
+/* Container for max-width content */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+Landing Page Design for MamaPutOnline - Manus

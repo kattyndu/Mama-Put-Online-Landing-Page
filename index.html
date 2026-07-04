@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MamaPutOnline - Authentic Nigerian Cooked Meals</title>
+    
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ===== HEADER / NAVIGATION SECTION ===== -->
+    <!-- This section contains the logo, menu bar, and search functionality -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo Section: Displays the MamaPutOnline branding on the top left -->
+            <div class="logo">
+                <h1>MamaPutOnline</h1>
+                <p class="tagline">Authentic Nigerian Flavors</p>
+            </div>
+            
+            <!-- Navigation Menu: Dark red/blue menu bar with main navigation links -->
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#customer-service" class="nav-link">Customer Service</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Search Bar: Located on the top right corner for easy access -->
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Search for your favorite dish...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <!-- This section occupies 30%+ of vertical space and 100% width, divided into two halves -->
+    <section class="hero">
+        <!-- Left half: Features a steaming, appetizing Nigerian dish image -->
+        <div class="hero-image">
+            <img src="images/hero_dish.jpg" alt="Steaming Nigerian Egusi Soup">
+        </div>
+        
+        <!-- Right half: Bold text and Call-To-Action button -->
+        <div class="hero-content">
+            <!-- Main heading with inviting message -->
+            <h2 class="hero-title">Don't Miss the Opportunity to Savor Authentic Nigerian Flavors!</h2>
+            
+            <!-- Subheading with additional context -->
+            <p class="hero-subtitle">Experience the warmth and tradition of home-cooked Nigerian meals, delivered fresh to your doorstep.</p>
+            
+            <!-- Call-To-Action Button: Encourages user interaction -->
+            <a href="#products" class="cta-button">Order Now</a>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT SECTION ===== -->
+    <!-- This section contains the side panel and product cards -->
+    <section class="main-content">
+        <!-- Left Side Panel: Navigation for product categories -->
+        <aside class="sidebar">
+            <h3 class="sidebar-title">Categories</h3>
+            <ul class="category-list">
+                <!-- Each category links to a specific product section -->
+                <li><a href="#soups" class="category-link">🍲 Soups</a></li>
+                <li><a href="#rice-dishes" class="category-link">🍚 Rice Dishes</a></li>
+                <li><a href="#swallow" class="category-link">🥘 Swallow & Sides</a></li>
+                <li><a href="#proteins" class="category-link">🍗 Proteins</a></li>
+                <li><a href="#specials" class="category-link">⭐ Special Combos</a></li>
+            </ul>
+        </aside>
+
+        <!-- Right Side: Product Cards Grid -->
+        <div class="products-container">
+            <!-- ===== ROW 1: SOUPS SECTION ===== -->
+            <div class="products-section" id="soups">
+                <h2 class="section-title">🍲 Our Delicious Soups</h2>
+                <div class="products-grid">
+                    
+                    <!-- Product Card 1: Egusi Soup -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/egusi.jpg" alt="Egusi Soup">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Egusi Soup</h3>
+                            <p class="product-quantity">Large (1L)</p>
+                            <p class="product-price">₦2,500</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2: Ewedu Soup -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/ewedu.jpg" alt="Ewedu Soup">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Ewedu Soup</h3>
+                            <p class="product-quantity">Large (1L)</p>
+                            <p class="product-price">₦2,200</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3: Ora Soup -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/ora.jpg" alt="Ora Soup">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Ora Soup</h3>
+                            <p class="product-quantity">Large (1L)</p>
+                            <p class="product-price">₦2,800</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4: Edikaikong Soup -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/edikaikong.jpg" alt="Edikaikong Soup">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Edikaikong Soup</h3>
+                            <p class="product-quantity">Large (1L)</p>
+                            <p class="product-price">₦2,400</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ROW 2: MORE SOUPS ===== -->
+            <div class="products-section">
+                <div class="products-grid">
+                    
+                    <!-- Product Card 5: Okazi Soup -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/okazi.jpg" alt="Okazi Soup">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Okazi Soup</h3>
+                            <p class="product-quantity">Large (1L)</p>
+                            <p class="product-price">₦2,600</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 6: Ogbono Soup -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/ogbono.jpg" alt="Ogbono Soup">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Ogbono Soup</h3>
+                            <p class="product-quantity">Large (1L)</p>
+                            <p class="product-price">₦2,700</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 7: Okro Soup -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/okro.jpg" alt="Okro Soup">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Okro Soup</h3>
+                            <p class="product-quantity">Large (1L)</p>
+                            <p class="product-price">₦2,300</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 8: Jollof Rice -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/jollof_rice.jpg" alt="Jollof Rice">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Jollof Rice</h3>
+                            <p class="product-quantity">Large (1kg)</p>
+                            <p class="product-price">₦2,000</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ROW 3: RICE DISHES AND MORE ===== -->
+            <div class="products-section" id="rice-dishes">
+                <h2 class="section-title">🍚 Rice Dishes & Sides</h2>
+                <div class="products-grid">
+                    
+                    <!-- Product Card 9: Fried Rice -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/fried_rice.jpg" alt="Fried Rice">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Fried Rice</h3>
+                            <p class="product-quantity">Large (1kg)</p>
+                            <p class="product-price">₦1,800</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 10: Porridge Yam -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/porridge_yam.jpg" alt="Porridge Yam">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Porridge Yam</h3>
+                            <p class="product-quantity">Large (1kg)</p>
+                            <p class="product-price">₦2,100</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 11: Porridge Beans -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/porridge_beans.jpg" alt="Porridge Beans">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Porridge Beans</h3>
+                            <p class="product-quantity">Large (1kg)</p>
+                            <p class="product-price">₦1,900</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 12: Fried Plantain -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/fried_plantain.jpg" alt="Fried Plantain">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Fried Plantain (Dodo)</h3>
+                            <p class="product-quantity">Medium (500g)</p>
+                            <p class="product-price">₦1,200</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ROW 4: SPECIAL DISHES ===== -->
+            <div class="products-section" id="specials">
+                <h2 class="section-title">⭐ Special Dishes</h2>
+                <div class="products-grid">
+                    
+                    <!-- Product Card 13: Abacha -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/abacha.jpg" alt="Abacha">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Abacha (African Salad)</h3>
+                            <p class="product-quantity">Medium (400g)</p>
+                            <p class="product-price">₦1,500</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 14: Nkwobi -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/nkwobi.jpg" alt="Nkwobi">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Nkwobi (Spicy Cow Foot)</h3>
+                            <p class="product-quantity">Medium (400g)</p>
+                            <p class="product-price">₦2,200</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 15: Fried Chicken -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/fried_chicken.jpg" alt="Fried Chicken">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Fried Chicken</h3>
+                            <p class="product-quantity">Half Chicken (800g)</p>
+                            <p class="product-price">₦3,500</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 16: Kpomo -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/kpomo.jpg" alt="Kpomo">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Kpomo (Peppered Cow Skin)</h3>
+                            <p class="product-quantity">Medium (400g)</p>
+                            <p class="product-price">₦2,000</p>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <!-- This section contains social media links and copyright information -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer branding and description -->
+            <div class="footer-section">
+                <h3>MamaPutOnline</h3>
+                <p>Bringing authentic Nigerian flavors to your table, one meal at a time.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links Section -->
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <!-- Facebook Icon and Link -->
+                    <a href="https://facebook.com/mamaputonline" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    
+                    <!-- Instagram Icon and Link -->
+                    <a href="https://instagram.com/mamaputonline" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    
+                    <!-- Twitter Icon and Link -->
+                    <a href="https://twitter.com/mamaputonline" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    
+                    <!-- WhatsApp Icon and Link -->
+                    <a href="https://wa.me/2349078537488" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📞 +234 907 853 7488</p>
+                <p>📧 info@mamaputonline.com</p>
+                <p>📍 Abuja, Nigeria</p>
+            </div>
+        </div>
+
+        <!-- Copyright Information -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 MamaPutOnline. All rights reserved. | Bringing tradition to your table.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

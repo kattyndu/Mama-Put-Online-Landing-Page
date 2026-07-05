@@ -485,7 +485,7 @@ Contact Information
 MamaPutOnline
 
 •
-📞 Phone: +234 801 234 5678
+📞 Phone: +234 907 853 7488
 
 •
 📧 Email: info@mamaputonline.com
@@ -508,7 +508,7 @@ Instagram: instagram.com/mamaputonline
 Twitter: twitter.com/mamaputonline
 
 •
-WhatsApp: wa.me/2348012345678
+WhatsApp: wa.me/2349078537488
 
 
 
@@ -554,7 +554,7 @@ For questions or issues with the landing page, please contact:
 Email: info@mamaputonline.com
 
 •
-Phone: +234 801 234 5678
+Phone: +234 907 853 7488
 
 
 

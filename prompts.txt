@@ -59,4 +59,3 @@ Prompt: "Add the following sections inside the footer: Company information (Mama
 
 1.5.3 Footer Styling
 Prompt: "Style the footer with a dark red and blue gradient background and white text. Add generous spacing, subtle hover effects for links and icons, and ensure responsive layouts for mobile and desktop screens."
-Landing Page Design for MamaPutOnline - Manus
